@@ -146,6 +146,10 @@ body {
     border-radius: 5px;
 }
 
+/* Impressum */
+.impressum_main{
+    padding: 20px;
+}
 
 
 /* ----------- Mediaquery CSS ----------*/
