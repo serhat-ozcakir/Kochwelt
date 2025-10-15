@@ -50,7 +50,7 @@ nav {
     gap: 32px;
 }
 
-header a {
+.navbar-link {
     color: var(--text-color-dark);
     font-size: 18px;
     font-weight: 700;
@@ -60,12 +60,12 @@ header a {
     transition: border-color 0.3s;
 }
 
-header a:hover {
+.navbar-link:hover {
     color: var(--highlight-color);
     border-bottom-color: var(--highlight-color);
 }
 
-header a.navbar-active {
+.navbar-link.navbar-active {
     color: var(--highlight-color);
     border-bottom-color: var(--highlight-color);
 }
