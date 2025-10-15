@@ -99,6 +99,55 @@ body {
 
 
 
+
+/* Kontakt */
+
+.form, .email_input, .password_input, .textarea_input, .vorname_input, .nachname_input, .buton_div {
+    display: flex ;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    max-width: 400px;
+    width: 100%;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #d6d7d3;
+   
+}
+.form-label{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.form-control{
+    min-height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+.buton_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 35px;
+    width: 50%;
+    border-radius: 5px;
+}
+
+
+
 /* ----------- Mediaquery CSS ----------*/
 
 @media screen and (max-width: 992px) {

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="icon" href="./img/logo_small.png" type="image/x-icon">
+</head>
+
+<body>
+    <main class="main">
+        <form class="form">
+            <div class="form_title">
+                <h2>Kontaktiere uns</h2>
+            </div>
+            <div class="vorname_input">
+                <label for="name" class="form-label">Vorname</label>
+                <input required type="text" class="form-control" id="name" aria-describedby="emailHelp">
+            </div>
+            <div class="nachname_input">
+                <label for="nachname" class="form-label">Nachname</label>
+                <input required ="text" class="form-control" id="nachname" aria-describedby="emailHelp">
+            </div>
+            <div class="email_input">
+                <label for="email" class="form-label">Email address</label>
+                <input required type="email" class="form-control" id="email" aria-describedby="emailHelp">
+            </div>
+            <div class="password_input">
+                <label for="password" class="form-label">Password</label>
+                <input required type="password" class="form-control" id="password">
+            </div>
+            <div class="textarea_input">
+                <label for="textarea" class="form-label">Deine Nachricht</label>
+                <textarea class="form-control" id="textarea" name="message" rows="10" cols="30">
+</textarea>
+            </div>
+            <div class="buton_div">
+
+                <button type="submit" class="btn btn-primary">Abschicken</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
