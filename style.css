@@ -222,7 +222,6 @@ header {
 
 .card-container {
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: center;
     gap: 40px;
 }
@@ -235,13 +234,11 @@ header {
     overflow: hidden;
     width: 250px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    
-    /* cursor: pointer; */
+
 }
 
 .card img {
     width: 100%;
-    /* width: 150px; */
     object-fit: cover;
     
 }
