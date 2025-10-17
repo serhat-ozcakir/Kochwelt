@@ -1,2 +1,186 @@
-Hallo Test
-Hallo
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Salami - Kochwelt</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+
+<body>
+
+    <!-- HEADER NAV -->
+
+    <section class="section-header">
+        <header>
+            <div>
+                <a href="index.html">
+                    <img class="header-logo" src="./img/logo.png" alt="Kochwelt logo">
+                </a>
+            </div>
+            <nav class="header-navbar">
+                <ul class="navbar-list">
+                    <li><a class="navbar-link navbar-active" href="index.html">Start</a></li>
+                    <li><a class="navbar-link" href="Rezept.html">Rezept des Tages</a></li>
+                    <li><a class="navbar-link" href="Kontakt.html">Kontakt</a></li>
+                    <li><a class="navbar-link" href="Impressum.html">Impressum</a></li>
+                </ul>
+            </nav>
+            <div class="burger-container">
+                <button class="burger-button">
+                    <img class="burger-image" src="./img/burger-64.png" alt="Menu">
+                </button>
+            </div>
+        </header>
+    </section>
+
+    <nav id="navbar-responsive" class="navbar-responsive navbar-hidden">
+        <ul class="navbar-list-responsive">
+            <li><a class="navbar-link-responsive navbar-active" href="index.html">Start</a></li>
+            <li><a class="navbar-link-responsive" href="Rezept.html">Rezept des Tages</a></li>
+            <li><a class="navbar-link-responsive" href="Kontakt.html">Kontakt</a></li>
+            <li><a class="navbar-link-responsive" href="Impressum.html">Impressum</a></li>
+        </ul>
+    </nav>
+
+    <!-- Tabelle -->
+
+    <main class="container-pizza">
+        <h1>Salamie Pizza</h1>
+
+        <img src="./img/pizza.jpeg" alt="Griechischer Bauernsalat" class="hero-image">
+
+        <div class="recipe-meta">
+            <div class="meta-item">
+                <img src="./img/icons/clock-regular.svg" alt="Clock Icon">
+                <span>1 Std. 5 Min.</span>
+            </div>
+            <div class="meta-item">
+                <img src="./img/icons/brain-solid.svg" alt="Brain Icon">
+                <span>simpel</span>
+            </div>
+            <div class="meta-item">
+                <img src="./img/icons/calendar-alt-regular.svg" alt="Calendar Icon">
+                <span>17.10.2025</span>
+            </div>
+        </div>
+
+        <div class="portions-section">
+            <span class="portions-label">Zutaten für</span>
+            <input type="number" class="portions-input" value="4" min="1" max="12" id="portions">
+            <button class="portions-button">Portionen</button>
+        </div>
+
+        <table class="ingredients-table">
+            <tbody>
+                <tr>
+                    <td class="amounts">800g</td>
+                    <td class="ingredients">Pizzateig (selbst zubereitet oder aus dem Kühlregal)</td>
+                </tr>
+                <tr>
+                    <td class="amounts">250g</td>
+                    <td class="ingredients">passierte Tomaten</td>
+                </tr>
+                <tr>
+                    <td class="amounts">1 Prise</td>
+                    <td class="ingredients">Paprikapulver, edelsüß</td>
+                </tr>
+                <tr>
+                    <td class="amounts">1 Prise</td>
+                    <td class="ingredients">Salz</td>
+                </tr>
+                <tr>
+                    <td class="amounts">1 Prise</td>
+                    <td class="ingredients">Pfeffer</td>
+                </tr>
+                <tr>
+                    <td class="amounts">80g</td>
+                    <td class="ingredients">Salami</td>
+                </tr>
+                <tr>
+                    <td class="amounts">Handvoll</td>
+                    <td class="ingredients">frischen Basilikum</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Zubereitung</h2>
+
+        <div class="time-info">
+            <div class="time-item">
+                <img src="./img/icons/clock-regular.svg" alt="Clock Icon">
+                <span>ca. 45 Minuten</span>
+            </div>
+            <div class="time-item">
+                <img src="./img/icons/clock-regular.svg" alt="Clock Icon">
+                <span>Gesamtzeit ca. 1 Std. 5 Min.</span>
+            </div>
+        </div>
+
+        <div class="instructions">
+            Einen Pizzastein auf einen Backrost auf der untersten Backschiene legen.
+            Den Backofen auf 280 Grad Ober-Unterhitze vorheizen. (Der Pizzastein muss richtig aufgeheizt werden:
+            Es lohnt sich den Backofen für min. 30 Minuten vorzuheizen, sodass auch der Kern des Steines richtig heiß
+            ist.) 800 g Pizzateig (selbst zubereitet oder aus dem Kühlregal) etwas Mehl und Grieß zum Ausrollen.
+            Den Pizzateig in 4 Stücke teilen. Jedes Teigstück mit etwas Mehl rund ausrollen. Kurz vor dem Belegen etwas
+            Grieß auf die Backschaufel streuen,dann rutscht die Pizza besser auf den Stein.
+        </div>
+
+        <div class="author-section">
+            <h3>Rezept erstellt von</h3>
+            <div class="author-card">
+                <img src="./img/profile_sebastian.jpg" alt="Profile Icon" class="author-avatar">
+                <div class="author-name">Sebastian</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <section class="section-footer">
+        <footer>
+            <div class="footer-top-container">
+                <div class="footer-top">
+                    <div class="footer-links">
+                        <a class="footer-link" href="index.html">START</a>
+                        <a class="footer-link" href="Kontakt.html">KONTAKT</a>
+                        <a class="footer-link" href="Impressum.html">IMPRESSUM</a>
+                    </div>
+                    <div class="footer-socials">
+                        <div>
+                            <span>FOLGE UNS:</span>
+                        </div>
+                        <div class="footer-social-links">
+                            <a href="https://www.x.com" target="_blank">
+                                <img class="footer-social-icon" src="./img/x_gray.png" alt="X" />
+                            </a>
+                            <a href="https://www.facebook.com" target="_blank">
+                                <img class="footer-social-icon" src="./img/facebook_gray.png" alt="Facebook" />
+                            </a>
+                            <a href="https://www.instagram.com" target="_blank">
+                                <img class="footer-social-icon" src="./img/instagram_gray.png" alt="Instagram" />
+                            </a>
+                            <a href="https://www.pinterest.com" target="_blank">
+                                <img class="footer-social-icon" src="./img/pinterest_gray.png" alt="Pinterest" />
+                            </a>
+                            <a href="https://www.youtube.com" target="_blank">
+                                <img class="footer-social-icon" src="./img/youtube_gray.png" alt="Youtube" />
+                            </a>
+                            <a href="https://www.tiktok.com" target="_blank">
+                                <img class="footer-social-icon" src="./img/tiktok_gray.png" alt="Tiktok" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; Kochwelt Gruppe 1</span>
+            </div>
+        </footer>
+    </section>
+
+
+</body>
+
+</html>
