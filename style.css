@@ -360,7 +360,7 @@ cursor: pointer;
 
 /* Rezept */
 .Rezept{
-    padding: 0px 40px;
+    padding: 0px 80px;
 }
 .image_container {
   width: 100%;        
@@ -406,7 +406,7 @@ cursor: pointer;
     padding: 10px 0px;
 }
 .Rezept_explain{
-    padding: 0px 40px;
+    padding: 0px 80px;
 }
 .container{
     max-width: 1400px;
@@ -456,7 +456,7 @@ cursor: pointer;
       cursor: pointer;
 }
 .preparung{
-    padding: 0px 40px;
+    padding: 0px 80px;
 }
 .preparung_title{
     margin-top: 40px;
@@ -623,6 +623,9 @@ cursor: pointer;
     }
     .section-3_title_text{
          padding: 0px 20px;
+    }
+    .Rezept, .Rezept_explain, .preparung{
+        padding: 0px 40px;
     }
 
 }
