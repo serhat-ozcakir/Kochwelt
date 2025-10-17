@@ -6,7 +6,7 @@
     <title>Kochwelt</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link rel="icon" href="./img/logo_small.png" type="image/x-icon" />
+    <link rel="icon" href="./img/logo_small_white.png" type="image/x-icon" />
     <script src="./app.js" defer></script>
   </head>
 
@@ -45,7 +45,152 @@
     </nav>
 
     <!-- Main -->
-    <main>Milan ist cool.</main>
+    <main>
+      <div class="section-recipe-wrapper">
+        <section class="section-recipe">
+          <h1>Rote Linsen Dal</h1>
+          <div class="recipe-image-container">
+            <img class="recipe-image" src="./img/dal_2.jpg" alt="Recipe image" />
+          </div>
+          <div class="info-container">
+            <div class="info-box">
+              <img class="info-icon" src="./img/icons/clock-regular.svg" alt="Zeit" />
+              <span>35 Min.</span>
+            </div>
+            <div class="info-box">
+              <img class="info-icon" src="./img/icons/brain-solid.svg" alt="Zeit" />
+              <span>simpel</span>
+            </div>
+            <div class="info-box">
+              <img class="info-icon" src="./img/icons/calendar-alt-regular.svg" alt="Zeit" />
+              <span>17.10.2025</span>
+            </div>
+          </div>
+          <div class="section-line"></div>
+        </section>
+      </div>
+
+      <div class="section-recipe-wrapper">
+        <section class="section-recipe">
+          <div class="portions">
+            <span>Zutaten für:</span>
+            <div>
+              <input class="portion-input" type="number" min="1" max="10" value="4" />
+              <button class="portion-button">Portionen</button>
+            </div>
+          </div>
+
+          <div class="ingredients">
+            <div class="info-box info-box-block">
+              <span class="ingredient"><span class="ingredient-amount" data-base="2">2</span></span>
+              Zwiebel(n)
+            </div>
+            <div class="info-box info-box-block no-background">
+              <span class="ingredient"><span class="ingredient-amount" data-base="4">4</span></span>
+              Knoblauchzehe(n)
+            </div>
+            <div class="info-box info-box-block">
+              <span class="ingredient"><span class="ingredient-amount" data-base="1">1</span> Stk.</span>
+              Ingwer
+            </div>
+          </div>
+          <div class="info-box info-box-block no-background">
+            <span class="ingredient"><span class="ingredient-amount" data-base="250">250</span> g</span>
+            Rote Linsen
+          </div>
+          <div class="info-box info-box-block">
+            <span class="ingredient"><span class="ingredient-amount" data-base="1">1</span> Bd.</span>
+            Koriander oder Petersilie
+          </div>
+          <!-- <div class="info-box info-box-block no-background">
+            <span class="ingredient"><span class="ingredient-amount" data-base="1">1</span> TL</span>
+            Kurkuma gemahlen
+          </div>
+          <div class="info-box info-box-block">
+            <span class="ingredient"><span class="ingredient-amount" data-base="1">1</span> TL</span>
+            Koriander gemahlen
+          </div>
+          <div class="info-box info-box-block no-background">
+            <span class="ingredient"><span class="ingredient-amount" data-base="1">1</span> TL</span>
+            Kreuzkümmel gemahlen
+          </div>
+          <div class="info-box info-box-block">
+            <span class="ingredient"><span class="ingredient-amount" data-base="1">1</span> TL</span>
+            Paprikapulver gemahlen
+          </div> -->
+          <div class="info-box info-box-block no-background">
+            <span class="ingredient"><span class="ingredient-amount" data-base="1">1</span> TL</span>
+            Garam Masala
+          </div>
+          <div class="info-box info-box-block">
+            <span class="ingredient"><span class="ingredient-amount" data-base="1">2</span> EL</span>
+            Rapsöl
+          </div>
+          <div class="info-box info-box-block no-background">
+            <span class="ingredient"><span class="ingredient-amount" data-base="1">500</span> ml</span>
+            Gemüsebrühe
+          </div>
+          <div class="info-box info-box-block">
+            <span class="ingredient"><span class="ingredient-amount" data-base="1">200</span> g</span>
+            Gehackte Tomaten
+          </div>
+          <div class="info-box info-box-block no-background">
+            <span class="ingredient"><span class="ingredient-amount" data-base="1">200</span> ml</span>
+            Kokosmilch
+          </div>
+          <div class="info-box info-box-block">
+            <span class="ingredient"><span class="ingredient-amount" data-base="1">1</span> TL</span>
+            Ahornsirup
+          </div>
+          <div class="info-box info-box-block no-background">
+            <span class="ingredient"><span class="ingredient-amount" data-base="1">2</span> EL</span>
+            Limettensaft
+          </div>
+          <!-- <div class="info-box info-box-block">
+            <span class="ingredient"><span class="ingredient-amount" data-base="1"></span></span>
+            Pfeffer
+          </div>
+          <div class="info-box info-box-block no-background">
+            <span class="ingredient"><span class="ingredient-amount" data-base="1"></span></span>
+            Salz
+          </div> -->
+        </section>
+      </div>
+
+      <div class="section-recipe-wrapper">
+        <section class="section-recipe">
+          <h2>Zubereitung</h2>
+          <div class="info-container">
+            <div class="info-box">
+              <img class="info-icon" src="./img/icons/clock-regular.svg" alt="Zeit" />
+              <span>ca. 35 Min.</span>
+            </div>
+          </div>
+
+          <br />
+          <p>
+            Zwiebeln abziehen und würfeln, Knoblauch abziehen und hacken. Ingwer schälen und klein schneiden. Linsen in
+            ein Sieb geben und abbrausen. Koriander bzw. Petersilie abbrausen, trockenschütteln und grob hacken.
+          </p>
+          <p>
+            Die Gewürze (Kurkuma, Koriander, Kreuzkümmel, Paprikapulver und Garam Masala) in einem Schälchen vermischen.
+            Das Rapsöl in einem großen Topf erhitzen und Zwiebelwürfel, Knoblauch und Ingwer darin 2-3 Minuten braten.
+            Dann die Gewürze und die roten Linsen dazugeben und kurz mit anschwitzen, mit der Gemüsebrühe ablöschen und
+            einmal aufkochen lassen. Zugedeckt etwa 10 Minuten köcheln lassen.
+          </p>
+          <p>
+            Gehackte Tomaten, Kokosmilch, Ahornsirup und Limettensaft unterrühren. Mit Pfeffer und etwas Salz
+            abschmecken und weitere 10 Minuten offen köcheln lassen. Wenn das Dal zu dickflüssig ist, noch etwas Wasser
+            oder gehackte Tomaten hinzugeben. Fertiges Linsen-Dal auf tiefe Teller verteilen.
+          </p>
+          <h3>Rezept erstellt von</h3>
+          <div class="recipe-author">
+            <img class="recipe-author-image" src="./img/monkey.jpg" alt="" />
+            <span class="recipe-author-name">Milan</span>
+          </div>
+        </section>
+      </div>
+    </main>
 
     <!-- Footer -->
     <section class="section-footer">
