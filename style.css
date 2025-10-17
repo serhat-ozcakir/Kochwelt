@@ -560,12 +560,12 @@ cursor: pointer;
 }
 
 /* Recipe (Milan) */
-.section-recipe-wrapper {
+.section-wrapper-outer {
     display: flex;
     justify-content: center;
 }
 
-.section-recipe {
+.section-wrapper-inner {
     max-width: 1024px;
     box-sizing: content-box;
     padding: 0 40px;
