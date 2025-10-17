@@ -294,7 +294,7 @@ footer {
     background: #f2f2f2;
     text-align: center;
     /* padding: 40px 5%; */
-    padding: 40px;
+    padding: 40px 80px;
 }
 
 .new h2 {
@@ -307,6 +307,7 @@ footer {
     display: flex;
     justify-content: space-around;
     gap: 30px;
+     flex-wrap: wrap;
 }
 
 .card {
@@ -319,13 +320,15 @@ footer {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     /* cursor: pointer; */
+
 }
 
-.card img {
-    width: 100%;
- 
-    height: 250px;
-    object-fit: cover;
+.card-img-top {
+    max-width: 300px;
+ width: 100%;
+  height: 300px; 
+  object-fit: cover; 
+  border-radius: 8px 8px 0 0;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -357,7 +360,7 @@ footer {
 }
 
 .section-3_left {
-    max-width: 600px;
+    max-width: 665px;
     width: 100%;
     margin-right: 30px;
     height: 200px;
@@ -436,13 +439,24 @@ cursor: pointer;
 }
 
 /* Rezept */
+.Rezept_main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Rezept_all{
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 .Rezept{
-    padding: 0px 80px;
+    padding: 0px 40px;
 }
 .image_container {
   width: 100%;        
-  max-width: 1400px;     
-  height: 350px;        
+     
+  height: 200px;        
   overflow: hidden;     
   border-radius: 10px;
   margin: 0 auto;       
@@ -483,12 +497,9 @@ cursor: pointer;
     padding: 10px 0px;
 }
 .Rezept_explain{
-    padding: 0px 80px;
+    padding: 0px 40px;
 }
-.container{
-    max-width: 1400px;
-    width: 100%;
-}
+
 .amount{
     display: flex;
     align-items: center;
@@ -533,7 +544,7 @@ cursor: pointer;
       cursor: pointer;
 }
 .preparung{
-    padding: 0px 80px;
+    padding: 0px 40px;
 }
 .preparung_title{
     margin-top: 40px;
@@ -592,6 +603,7 @@ cursor: pointer;
   overflow: hidden;     
   border-radius: 10px;      
 }
+
 
 .recipe-image {
   width: 100%;
@@ -695,16 +707,6 @@ cursor: pointer;
 }
 
 /* ----------- Mediaquery CSS ----------*/
-@media screen and (min-width: 1485px){
-    .image_container{
-        max-width: 1500px;
-        width: 100%;
-    } 
-    .container{
-        max-width: 1485px;
-    width: 100%;
-    }
-}
 
 @media screen and (max-width: 992px) {
 
@@ -863,6 +865,9 @@ cursor: pointer;
     .portion-input {
         margin-left: 0;
     }
+    .new{
+        padding: 40px 0px;
+    }
 }
 
 /* Mobile L */
@@ -877,3 +882,4 @@ cursor: pointer;
         gap: 12px;
     }
 }
+
