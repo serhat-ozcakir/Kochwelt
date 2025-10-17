@@ -247,7 +247,7 @@ footer {
 .section-1 {
     display: flex;
     justify-content: space-around;
-    padding: 80px 80px;
+    padding: 80px 70px;
 }
 
 .section-1_title {
@@ -305,10 +305,8 @@ footer {
 
 .card-container {
     display: flex;
-    flex-wrap: wrap;
-    /* justify-content: space-between; */
-    justify-content: center;
-    gap: 40px;
+    justify-content: space-around;
+    gap: 30px;
 }
 
 .card {
@@ -332,7 +330,7 @@ footer {
 }
 
 .card p {
-    padding: 10px;
+  padding: 0px;
     font-weight: 700;
     background: white;
 }
@@ -756,6 +754,13 @@ cursor: pointer;
         font-size: 17px !important;
         text-align: justify !important;
     }
+
+    .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
 
     .section-3{
        
