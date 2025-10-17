@@ -575,7 +575,7 @@ cursor: pointer;
     box-sizing: content-box;
 }
 
-.section-recipe h1 {
+.section-wrapper-inner h1 {
     margin-top: 56px;
 }
 
