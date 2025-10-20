@@ -208,11 +208,6 @@ footer {
     text-decoration: none;
 }
 
-.footer-link:hover {
-    /* text-decoration: underline; */
-    /* color: #A5A5A5; */
-}
-
 .footer-socials {
     display: flex;
     align-items: center;
@@ -244,10 +239,16 @@ footer {
 }
 
 /* Section 1 */
-.section-1 {
+.section-1_container{
     display: flex;
-    justify-content: space-around;
-    padding: 80px 70px;
+    justify-content: center;
+}
+.section-1 {
+display: flex;
+    justify-content: space-between;
+    padding: 80px 40px;
+    max-width: 1280px;
+    width: 100%;
 }
 
 .section-1_title {
@@ -288,13 +289,25 @@ footer {
 }
 
 /* Section 2 */
-
-
+.section-2_title_container{
+    display: flex;
+    justify-content: center;
+     background: #f2f2f2;
+     padding-top: 50px;
+}
+.new_container{
+    display: flex;
+    justify-content: center;
+     background: #f2f2f2;
+}
 .new {
-    background: #f2f2f2;
+   
     text-align: center;
-    /* padding: 40px 5%; */
-    padding: 40px;
+display: flex;
+    justify-content: space-between;
+    padding: 50px 0px;
+    max-width: 1280px;
+    width: 100%;
 }
 
 .new h2 {
@@ -305,8 +318,11 @@ footer {
 
 .card-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 30px;
+    max-width: 1280px;
+    width: 100%;
+  
 }
 
 .card {
@@ -316,16 +332,19 @@ footer {
     border-radius: 8px;
     overflow: hidden;
     width: 300px;
+    height: 365px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     /* cursor: pointer; */
+
 }
 
-.card img {
-    width: 100%;
- 
-    height: 250px;
-    object-fit: cover;
+.card-img-top {
+    /* max-width: 300px; */
+ width: 100%;
+  height: 300px; 
+  object-fit: cover; 
+  border-radius: 8px 8px 0 0;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -337,12 +356,18 @@ footer {
 
 
 /* Section 3 */
+.section-3_container{
+    display: flex;
+    justify-content: center;
+}
 
 .section-3 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 50px 50px;
+    padding: 50px 40px;
+    max-width: 1280px;
+    width: 100%;
     
 
 }
@@ -354,10 +379,11 @@ footer {
 }
 .section-3_title_text{
     margin-bottom: 0px;
+    margin-top: 50px;
 }
 
 .section-3_left {
-    max-width: 600px;
+    max-width: 665px;
     width: 100%;
     margin-right: 30px;
     height: 200px;
@@ -436,13 +462,28 @@ cursor: pointer;
 }
 
 /* Rezept */
-.Rezept{
-    padding: 0px 80px;
+.Rezept_main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 40px;
 }
+.Rezept_all{
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.Rezept_container{
+    display: flex;
+    justify-content: center;
+}
+
+
 .image_container {
   width: 100%;        
-  max-width: 1400px;     
-  height: 350px;        
+     
+  height: 200px;        
   overflow: hidden;     
   border-radius: 10px;
   margin: 0 auto;       
@@ -482,13 +523,8 @@ cursor: pointer;
    border-top: 1px solid #d6d7d3 !important;
     padding: 10px 0px;
 }
-.Rezept_explain{
-    padding: 0px 80px;
-}
-.container{
-    max-width: 1400px;
-    width: 100%;
-}
+
+
 .amount{
     display: flex;
     align-items: center;
@@ -532,9 +568,7 @@ cursor: pointer;
 .Portionen:hover{
       cursor: pointer;
 }
-.preparung{
-    padding: 0px 80px;
-}
+
 .preparung_title{
     margin-top: 40px;
 }
@@ -766,6 +800,7 @@ tbody tr td:last-child {
   border-radius: 10px;      
 }
 
+
 .recipe-image {
   width: 100%;
   height: inherit;
@@ -800,13 +835,18 @@ tbody tr td:last-child {
     align-items: center;
 }
 
+.flex {
+    display: flex;
+}
+
 .portion-input {
     margin-left: 24px;
-    padding-left: 12px;
+    text-indent: 12px;
     width: 80px;
-    height: 32px;
+    height: 36px;
     font-size: 16px;
-    border-color: var(--background-color-lightgray);
+    border-radius: 8px 0px 0px 8px;
+    border: 1px solid #d5d5d5;
 }
 
 .portion-button {
@@ -869,15 +909,10 @@ tbody tr td:last-child {
 
 
 /* ----------- Mediaquery CSS ----------*/
-@media screen and (min-width: 1485px){
-    .image_container{
-        max-width: 1500px;
-        width: 100%;
-    } 
-    .container{
-        max-width: 1485px;
-    width: 100%;
-    }
+@media screen and (max-width: 1300px) {
+    	.new{
+	    padding: 40px 20px;
+}
 }
 
 @media screen and (max-width: 992px) {
@@ -944,6 +979,7 @@ tbody tr td:last-child {
     }
     .section-3_title{
         text-align: center !important;
+        margin-top: 50px;
     }
 
     .section-3_left{
@@ -1037,6 +1073,9 @@ tbody tr td:last-child {
     .portion-input {
         margin-left: 0;
     }
+    .new{
+        padding: 40px 0px;
+    }
 }
 
 /* Mobile L */
@@ -1050,4 +1089,16 @@ tbody tr td:last-child {
         align-items: center;
         gap: 12px;
     }
+    .new{
+        padding: 25px 0px 40px !important;
+    }
 }
+@media (max-width: 350px) {
+    .section-3_title{
+        margin-top: 35px;
+    }
+    .card{
+        width: 270px;
+    }
+}
+
