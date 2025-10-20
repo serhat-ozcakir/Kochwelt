@@ -244,10 +244,16 @@ footer {
 }
 
 /* Section 1 */
-.section-1 {
+.section-1_container{
     display: flex;
-    justify-content: space-around;
-    padding: 80px 70px;
+    justify-content: center;
+}
+.section-1 {
+display: flex;
+    justify-content: space-between;
+    padding: 80px 40px;
+    max-width: 1280px;
+    width: 100%;
 }
 
 .section-1_title {
@@ -288,13 +294,25 @@ footer {
 }
 
 /* Section 2 */
-
-
+.section-2_title_container{
+    display: flex;
+    justify-content: center;
+     background: #f2f2f2;
+     padding-top: 50px;
+}
+.new_container{
+    display: flex;
+    justify-content: center;
+     background: #f2f2f2;
+}
 .new {
-    background: #f2f2f2;
+   
     text-align: center;
-    /* padding: 40px 5%; */
-    padding: 40px 80px;
+display: flex;
+    justify-content: space-between;
+    padding: 50px 0px;
+    max-width: 1280px;
+    width: 100%;
 }
 
 .new h2 {
@@ -305,9 +323,11 @@ footer {
 
 .card-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 30px;
-     flex-wrap: wrap;
+    max-width: 1280px;
+    width: 100%;
+  
 }
 
 .card {
@@ -317,6 +337,7 @@ footer {
     border-radius: 8px;
     overflow: hidden;
     width: 300px;
+    height: 365px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     /* cursor: pointer; */
@@ -324,7 +345,7 @@ footer {
 }
 
 .card-img-top {
-    max-width: 300px;
+    /* max-width: 300px; */
  width: 100%;
   height: 300px; 
   object-fit: cover; 
@@ -340,12 +361,18 @@ footer {
 
 
 /* Section 3 */
+.section-3_container{
+    display: flex;
+    justify-content: center;
+}
 
 .section-3 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 50px 50px;
+    padding: 50px 40px;
+    max-width: 1280px;
+    width: 100%;
     
 
 }
@@ -357,6 +384,7 @@ footer {
 }
 .section-3_title_text{
     margin-bottom: 0px;
+    margin-top: 50px;
 }
 
 .section-3_left {
@@ -443,6 +471,7 @@ cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 40px 40px;
 }
 .Rezept_all{
     max-width: 1280px;
@@ -450,9 +479,12 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
 }
-.Rezept{
-    padding: 0px 40px;
+.Rezept_container{
+    display: flex;
+    justify-content: center;
 }
+
+
 .image_container {
   width: 100%;        
      
@@ -496,9 +528,7 @@ cursor: pointer;
    border-top: 1px solid #d6d7d3 !important;
     padding: 10px 0px;
 }
-.Rezept_explain{
-    padding: 0px 40px;
-}
+
 
 .amount{
     display: flex;
@@ -543,9 +573,7 @@ cursor: pointer;
 .Portionen:hover{
       cursor: pointer;
 }
-.preparung{
-    padding: 0px 40px;
-}
+
 .preparung_title{
     margin-top: 40px;
 }
@@ -707,6 +735,11 @@ cursor: pointer;
 }
 
 /* ----------- Mediaquery CSS ----------*/
+@media screen and (max-width: 1300px) {
+    	.new{
+	    padding: 40px 20px;
+}
+}
 
 @media screen and (max-width: 992px) {
 
@@ -772,6 +805,7 @@ cursor: pointer;
     }
     .section-3_title{
         text-align: center !important;
+        margin-top: 50px;
     }
 
     .section-3_left{
@@ -880,6 +914,17 @@ cursor: pointer;
         flex-direction: column;
         align-items: center;
         gap: 12px;
+    }
+    .new{
+        padding: 25px 0px 40px !important;
+    }
+}
+@media (max-width: 350px) {
+    .section-3_title{
+        margin-top: 35px;
+    }
+    .card{
+        width: 270px;
     }
 }
 
