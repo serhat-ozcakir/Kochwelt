@@ -208,11 +208,6 @@ footer {
     text-decoration: none;
 }
 
-.footer-link:hover {
-    /* text-decoration: underline; */
-    /* color: #A5A5A5; */
-}
-
 .footer-socials {
     display: flex;
     align-items: center;
@@ -618,6 +613,179 @@ cursor: pointer;
     border-radius: 30px;
 }
 
+
+
+/* -- Rezept 2 -- */
+
+
+
+.container-pizza {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 20px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+
+.recipe-meta {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 64px;
+    flex-wrap: wrap;
+}
+
+.meta-item {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 16px;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+
+.meta-item img {
+    width: 20px;
+}
+
+.portions-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 12px 6px 12px 6px;
+}
+
+.portions-label {
+    font-weight: 600;
+}
+
+.portions-input {
+    width: 60px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.portions-button {
+    background: #0a8f00;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.portions-button:hover {
+    background: #087500;
+}
+
+/* Zutaten Tabelle */
+
+.container-pizza table {
+    width: 100%;
+    margin-bottom: 32px;
+    border-collapse: separate;
+    border-spacing: 0 0;
+}
+
+
+tbody tr {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+td {
+    padding: 18px 20px;
+    font-size: 18px;
+    color: #333;
+    background: inherit;
+}
+
+/* Abwechselnde Zeilenfarben */
+tbody tr:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Jede Zeile einzeln abrunden */
+tbody tr td:first-child {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+tbody tr td:last-child {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.ingredients-table .amounts {
+    width: 70px;
+}
+
+.time-info {
+    display: flex;
+    gap: 16px;
+    margin: 6px 0 24px;
+    flex-wrap: wrap;
+}
+
+.time-item {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 16px;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+
+.time-item img {
+    width: 20px;
+}
+
+.instructions {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8;
+    margin-bottom: 32px;
+}
+
+.author-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.author-name {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+
+
 /* Recipe (Milan) */
 .section-wrapper-outer {
     display: flex;
@@ -688,13 +856,18 @@ cursor: pointer;
     align-items: center;
 }
 
+.flex {
+    display: flex;
+}
+
 .portion-input {
     margin-left: 24px;
-    padding-left: 12px;
+    text-indent: 12px;
     width: 80px;
-    height: 32px;
+    height: 36px;
     font-size: 16px;
-    border-color: var(--background-color-lightgray);
+    border-radius: 8px 0px 0px 8px;
+    border: 1px solid #d5d5d5;
 }
 
 .portion-button {
@@ -754,6 +927,7 @@ cursor: pointer;
     padding-top: 4px;
     font-size: 32px;
 }
+
 
 /* ----------- Mediaquery CSS ----------*/
 @media screen and (max-width: 1300px) {
