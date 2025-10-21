@@ -414,6 +414,26 @@ display: flex;
     margin-top: 20px;
 }
 
+.form_mail{
+    display: flex;
+    justify-content: center;
+}
+.form_container{
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form_text{
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+}
+.form_text::before{
+    content: "✅";
+   
+}
 .main{
     display: flex;
     justify-content: center;
@@ -440,6 +460,7 @@ display: flex;
     min-height: 30px;
     border: none;
     border-radius: 5px;
+   font-family: 'Raleway';
 }
 .buton_div{
     display: flex;
@@ -887,7 +908,7 @@ cursor: pointer;
          padding: 0px 20px;
     }
     .Rezept, .Rezept_explain, .preparung{
-        padding: 0px 40px;
+        padding: 0px 20px;
     }
 
     .portions {
@@ -902,7 +923,11 @@ cursor: pointer;
     .new{
         padding: 40px 0px;
     }
+    .Rezept_main{
+        padding: 40px 10px;
+    }
 }
+
 
 /* Mobile L */
 @media (max-width: 425px) {
@@ -925,6 +950,9 @@ cursor: pointer;
     }
     .card{
         width: 270px;
+    }
+    .form_text{
+        font-size: 30px;
     }
 }
 

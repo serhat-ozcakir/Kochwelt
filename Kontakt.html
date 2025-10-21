@@ -45,7 +45,7 @@
     </nav>
 
     <main class="main">
-        <form class="form">
+        <form class="form" id="my-form" action="https://formspree.io/f/xdkwvlwd" method="POST" onsubmit="handleSubmit(event)">
             <div class="form_title">
                 <h2 style="color:green">Kontaktiere uns</h2>
             </div>
@@ -62,10 +62,6 @@
                 <label for="email" class="form-label">Email address</label>
                 <input required type="email" class="form-control" id="email" aria-describedby="emailHelp">
             </div>
-            <div class="password_input">
-                <label for="password" class="form-label">Password</label>
-                <input required type="password" class="form-control" id="password">
-            </div>
             <div class="textarea_input">
                 <label for="textarea" class="form-label">Deine Nachricht</label>
                 <textarea required class="form-control" id="textarea" name="message" rows="10" cols="30">
@@ -73,7 +69,8 @@
             </div>
             <div class="buton_div">
 
-                <button type="submit" class="btn btn-primary">Abschicken</button>
+                <button type="submit" id="my-form-button" class="btn btn-primary">Abschicken</button>
+                 <p id="my-form-status"></p>
             </div>
         </form>
     </main>
@@ -120,5 +117,6 @@
         </div>
       </footer>
     </section>
+    <script src="./form.js"></script>
 </body>
 </html>

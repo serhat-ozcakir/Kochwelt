@@ -11,3 +11,4 @@ window.addEventListener("resize", () => {
     menu.classList.add("navbar-hidden");
   }
 });
+
