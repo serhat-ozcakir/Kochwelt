@@ -657,17 +657,18 @@ cursor: pointer;
 .portions-section {
     display: flex;
     align-items: center;
-    gap: 20px;
+    /* gap: 20px; */
     padding: 12px 6px 12px 6px;
 }
 
 .portions-label {
     font-weight: 600;
+    margin-right: 20px;
 }
 
 .portions-input {
     width: 60px;
-    padding: 8px;
+    padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 16px;
