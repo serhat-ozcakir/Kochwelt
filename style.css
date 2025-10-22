@@ -621,7 +621,7 @@ cursor: pointer;
 
 .container-pizza {
     max-width: 1200px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding: 2rem 20px;
 }
 
