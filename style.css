@@ -620,9 +620,9 @@ cursor: pointer;
 
 
 .container-pizza {
-    max-width: 1200px;
-    /* margin: 0 auto; */
-    padding: 2rem 20px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
 
 .hero-image {
@@ -657,7 +657,7 @@ cursor: pointer;
 .portions-section {
     display: flex;
     align-items: center;
-    /* gap: 20px; */
+
     padding: 12px 6px 12px 6px;
 }
 
@@ -1129,5 +1129,12 @@ tbody tr td:last-child {
     .form_text{
         font-size: 30px;
     }
+
+    .container-pizza {
+        max-width: 1280px;
+        margin: 0 0;
+        padding: 40px 20px;
+    }
+
 }
 
